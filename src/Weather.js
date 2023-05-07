@@ -88,6 +88,52 @@ export default function Weather() {
           </ul>
         </div>
       </div>
+      <div className="forecast">
+        <div className="row">
+          <div className="col-2">
+            <ul>
+              <li>Mon</li>
+              <li>Sunny</li>
+              <li>10℃/15℃</li>
+            </ul>
+          </div>
+          <div className="col-2">
+            <ul>
+              <li>Tue</li>
+              <li>Sunny</li>
+              <li>10℃/15℃</li>
+            </ul>
+          </div>
+          <div className="col-2">
+            <ul>
+              <li>Wed</li>
+              <li>Sunny</li>
+              <li>10℃/15℃</li>
+            </ul>
+          </div>
+          <div className="col-2">
+            <ul>
+              <li>Thu</li>
+              <li>Sunny</li>
+              <li>10℃/15℃</li>
+            </ul>
+          </div>
+          <div className="col-2">
+            <ul>
+              <li>Fri</li>
+              <li>Sunny</li>
+              <li>10℃/15℃</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <small>
+        <a href="https://github.com/olgashokalo/Weather-App-React">
+          {" "}
+          Open-source code
+        </a>{" "}
+        by Olga Shokalo
+      </small>
     </div>
   );
 }
