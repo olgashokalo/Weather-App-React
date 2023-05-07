@@ -1,0 +1,10 @@
+.actual-temperature {
+  font-size: 60px;
+  color: #dddddd;
+  margin-left: 20px;
+}
+.units {
+  position: relative;
+  top: -27px;
+  color: rgb(64, 60, 60);
+}
