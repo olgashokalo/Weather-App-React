@@ -127,13 +127,6 @@ export default function Weather() {
           </div>
         </div>
       </div>
-      <small>
-        <a href="https://github.com/olgashokalo/Weather-App-React">
-          {" "}
-          Open-source code
-        </a>{" "}
-        by Olga Shokalo
-      </small>
     </div>
   );
 }
