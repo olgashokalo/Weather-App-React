@@ -1,3 +1,40 @@
+.city {
+  background-color: whitesmoke;
+  height: 36px;
+  font-weight: 250;
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 20%);
+}
+
+.Weather {
+  border-radius: 5px;
+  border: 1px solid #dadde1;
+  margin: 30px 30px 10px auto;
+  background: linear-gradient(
+    180.3deg,
+    rgb(221, 221, 221) 5.5%,
+    rgb(110, 136, 161) 90.2%
+  );
+  padding: 30px;
+}
+
+.Weather h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.Weather ul {
+  list-style: none;
+}
+.Weather li {
+  font-size: 16px;
+}
+
+.weather-forecast {
+  font-style: italic;
+  font-size: 20px;
+  color: #dddddd;
+  margin: 15px 0px 20px 50px;
+}
 .actual-temperature {
   font-size: 60px;
   color: #dddddd;
@@ -6,5 +43,6 @@
 .units {
   position: relative;
   top: -27px;
+  font-size: 20px;
   color: rgb(64, 60, 60);
 }

@@ -48,14 +48,14 @@ export default function Weather() {
           <div className="col-2">
             <input
               type="submit"
-              className="btn btn-outline-secondary"
+              className="btn btn-outline-secondary w-100 "
               value="Search"
             />
           </div>
           <div className="col-2">
             <input
               type="submit"
-              className="btn btn-outline-secondary"
+              className="btn btn-outline-secondary w-100 "
               value="Current"
             />
           </div>
