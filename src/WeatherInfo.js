@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
+import WeatherForecast from "./WeatherForecast";
 
 export default function WeatherInfo(props) {
   return (
@@ -35,45 +36,7 @@ export default function WeatherInfo(props) {
           </ul>
         </div>
       </div>
-      <div className="forecast">
-        <div className="row">
-          <div className="col-2">
-            <ul>
-              <li>Mon</li>
-              <li>Sunny</li>
-              <li>10℃/15℃</li>
-            </ul>
-          </div>
-          <div className="col-2">
-            <ul>
-              <li>Tue</li>
-              <li>Sunny</li>
-              <li>10℃/15℃</li>
-            </ul>
-          </div>
-          <div className="col-2">
-            <ul>
-              <li>Wed</li>
-              <li>Sunny</li>
-              <li>10℃/15℃</li>
-            </ul>
-          </div>
-          <div className="col-2">
-            <ul>
-              <li>Thu</li>
-              <li>Sunny</li>
-              <li>10℃/15℃</li>
-            </ul>
-          </div>
-          <div className="col-2">
-            <ul>
-              <li>Fri</li>
-              <li>Sunny</li>
-              <li>10℃/15℃</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <WeatherForecast />
     </div>
   );
 }

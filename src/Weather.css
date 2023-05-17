@@ -31,12 +31,7 @@
 .Weather a {
   text-decoration: none;
 }
-.weather-forecast {
-  font-style: italic;
-  font-size: 20px;
-  color: #dddddd;
-  margin: 15px 0px 20px 50px;
-}
+
 .actual-temperature {
   font-size: 60px;
   color: #dddddd;
