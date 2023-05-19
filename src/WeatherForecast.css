@@ -1,8 +1,9 @@
 .forecast {
   text-align: center;
+  font-style: italic;
   color: #dddddd;
   font-size: 20px;
-  margin: 15px 0px 20px 50px;
+  margin: 15px;
 }
 .WeatherForecast-temperature-min {
   margin-left: 5px;
@@ -10,4 +11,8 @@
 .WeatherForecast-temperature-min,
 .WeatherForecast-temperature-max {
   font-size: 17px;
+}
+
+.WeatherForecast-Icon {
+  block-size: 70px;
 }
