@@ -11,7 +11,11 @@ function App() {
           <a href="https://github.com/olgashokalo/Weather-App-React">
             Open-source code
           </a>{" "}
-          by Olga Shokalo
+          by Olga Shokalo and{" "}
+          <a href="https://willowy-lamington-f3210b.netlify.app/">
+            {" "}
+            hosted on Netlify{" "}
+          </a>
         </footer>
       </div>
     </div>

@@ -8,7 +8,7 @@ button {
 .Weather {
   border-radius: 5px;
   border: 1px solid #dadde1;
-  margin: 30px 30px 10px auto;
+  margin: 10px auto;
   background: linear-gradient(
     180.3deg,
     rgb(221, 221, 221) 5.5%,
