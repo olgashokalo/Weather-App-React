@@ -3,6 +3,8 @@ import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import WeatherForecast from "./WeatherForecast";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({});
@@ -54,18 +56,9 @@ export default function Weather(props) {
               />{" "}
             </div>
             <div className="col-2">
-              <input
-                type="submit"
-                className="btn btn-outline-secondary w-100 "
-                value="Search"
-              />
-            </div>
-            <div className="col-2">
-              <input
-                type="submit"
-                className="btn btn-outline-secondary w-100 "
-                value="Current"
-              />
+              <button type="submit" className="btn btn-outline-secondary">
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
+              </button>
             </div>
           </div>
         </form>
