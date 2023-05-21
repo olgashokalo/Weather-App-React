@@ -5,6 +5,7 @@ import axios from "axios";
 import WeatherForecast from "./WeatherForecast";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({});
@@ -41,6 +42,18 @@ export default function Weather(props) {
     setCity(event.target.value);
   }
 
+  function searchLocalPosition(position) {
+    let apiKey = "3632a7c9224763143fe6obtb61dff025";
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${position.coords.longitude}&lat=${position.coords.latitude}&key=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(showWeather);
+    console.log(position);
+  }
+
+  function geoLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(searchLocalPosition);
+  }
+
   if (ready) {
     return (
       <div className="Weather">
@@ -55,9 +68,16 @@ export default function Weather(props) {
                 onChange={handleCityChange}
               />{" "}
             </div>
-            <div className="col-2">
-              <button type="submit" className="btn btn-outline-secondary">
+            <div className="col-4">
+              <button type="submit" className="btn btn-outline-secondary ms-2">
                 <FontAwesomeIcon icon={faMagnifyingGlass} />
+              </button>
+              <button
+                type="submit"
+                className="btn btn-outline-secondary ms-2"
+                onClick={geoLocation}
+              >
+                <FontAwesomeIcon icon={faLocationDot} />
               </button>
             </div>
           </div>
