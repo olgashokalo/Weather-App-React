@@ -16,3 +16,16 @@
 .WeatherForecast-Icon {
   block-size: 70px;
 }
+@media (max-width: 576px) {
+  .WeatherForecast-Icon {
+    block-size: 40px;
+  }
+  .WeatherForecast-temperature-min,
+  .WeatherForecast-temperature-max {
+    font-size: 13px;
+  }
+  .forecast {
+    margin: 0px;
+    font-size: 15px;
+  }
+}

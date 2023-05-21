@@ -59,7 +59,7 @@ export default function Weather(props) {
       <div className="Weather">
         <form className="mb-5" onSubmit={handleSubmit}>
           <div className="row">
-            <div className="col-6">
+            <div className="col-7">
               <input
                 className="city form-control"
                 type="search"
@@ -68,7 +68,7 @@ export default function Weather(props) {
                 onChange={handleCityChange}
               />{" "}
             </div>
-            <div className="col-4">
+            <div className="col-5">
               <button type="submit" className="btn btn-outline-secondary ms-2">
                 <FontAwesomeIcon icon={faMagnifyingGlass} />
               </button>
