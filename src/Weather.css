@@ -47,17 +47,25 @@ button {
   .Weather li {
     font-size: 12px;
   }
+  .Weather ul {
+    padding-left: 10px;
+  }
+  .Weather {
+    padding: 15px;
+  }
+
   .Weather h1 {
     font-size: 22px;
   }
   .actual-temperature {
-    font-size: 40px;
+    font-size: 35px;
+    margin-left: 0;
   }
   .units {
-    font-size: 15px;
-    top: -17px;
+    font-size: 12px;
+    top: -16px;
   }
   .currentIcon {
-    block-size: 80px;
+    block-size: 70px;
   }
 }

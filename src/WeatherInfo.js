@@ -14,7 +14,7 @@ export default function WeatherInfo(props) {
             className="currentIcon"
           />
         </div>
-        <div className="col-7">
+        <div className="col-8">
           <ul>
             <li>
               {" "}
